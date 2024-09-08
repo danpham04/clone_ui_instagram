@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:instagram_ui_ux/screens/home_screens/home_screens.dart';
 import 'package:instagram_ui_ux/screens/login/login.dart';
 import 'package:instagram_ui_ux/screens/sign_up/sign_up.dart';
+import 'package:instagram_ui_ux/screens/splash/splash.dart';
 
 class AppRoutes {
   static MaterialPageRoute<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -23,13 +24,16 @@ class AppRoutes {
       case homeScreens:
         return const HomeScreens();
       case signUp:
-      return const SignUp();
+        return const SignUp();
+      case splash:
+        return const Splash();
       default:
         throw 'Router $routerName is not define';
     }
   }
 
   static const String homeScreens = '/home_screens';
-  static const String login = '/';
-  static const String signUp = 'sign_up';
+  static const String login = '/login';
+  static const String signUp = '/sign_up';
+  static const String splash = '/';
 }

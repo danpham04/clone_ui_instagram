@@ -35,9 +35,11 @@ class Home extends StatelessWidget {
         ],
       ),
       body: const SingleChildScrollView(
+        // scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Story()
+            Story(),
+
           ],
         ),
       ),
