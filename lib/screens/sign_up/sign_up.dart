@@ -10,7 +10,7 @@ class SignUp extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconHome(
-          icon: Icons.arrow_back_ios,
+          icon: Icon(Icons.arrow_back_ios,),
           event: () {
             Navigator.of(context).pop();
           },

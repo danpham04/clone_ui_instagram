@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:instagram_ui_ux/global/app_paths.dart';
+import 'package:instagram_ui_ux/screens/home_screens/add/add_story.dart';
 import 'package:instagram_ui_ux/screens/home_screens/favorite/favorite.dart';
 import 'package:instagram_ui_ux/screens/home_screens/home/home.dart';
 import 'package:instagram_ui_ux/screens/home_screens/infor/infor.dart';
@@ -22,6 +24,7 @@ class _HomeScreensState extends State<HomeScreens> {
       const Home(),
       const Search(),
       const Favorite(),
+      const AddStory(),
       const Infor(),
     ];
     super.initState();
@@ -36,31 +39,28 @@ class _HomeScreensState extends State<HomeScreens> {
       bottomNavigationBar: Observer(
         builder: (context) {
           return BottomNavigationBar(
-            items: const [
-              BottomNavigationBarItem(
+            items: [
+              const BottomNavigationBarItem(
                 icon: Icon(Icons.home_outlined),
                 activeIcon: Icon(Icons.home),
                 label: 'Home',
               ),
-              BottomNavigationBarItem(
+              const BottomNavigationBarItem(
                   icon: Icon(Icons.search),
                   activeIcon: Icon(Icons.search_outlined),
-                  label: 'Shop'),
-              // BottomNavigationBarItem(
-              //   label: '',
-              //   icon: IconButton(
-              //     onPressed: () {},
-              //     icon: Image.asset(
-              //       AppPaths().,
-              //       width: 50.sp,
-              //     ),
-              //   ),
-              // ),
+                  label: 'Search'),
               BottomNavigationBarItem(
+                  icon: Image.asset(
+                    AppPaths().add,
+                    width: 30,
+                  ),
+                  // activeIcon: const Icon(Icons.search_outlined),
+                  label: 'Add'),
+              const BottomNavigationBarItem(
                   icon: Icon(Icons.favorite_outline),
                   activeIcon: Icon(Icons.favorite),
-                  label: 'Inbox'),
-              BottomNavigationBarItem(
+                  label: 'Favorite'),
+              const BottomNavigationBarItem(
                   icon: Icon(Icons.person_outline),
                   activeIcon: Icon(Icons.person),
                   label: 'Profile'),

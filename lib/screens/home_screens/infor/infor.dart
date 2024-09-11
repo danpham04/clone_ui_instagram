@@ -5,6 +5,18 @@ class Infor extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar( 
+        title: const Text("Pham Dan"),
+        actions: [
+          IconButton(onPressed: () {}, icon: const Icon(Icons.list_sharp))
+        ],
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+      ),
+      body: Container(
+        
+      ),
+    );
   }
 }

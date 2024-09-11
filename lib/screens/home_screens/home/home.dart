@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui_ux/global/app_paths.dart';
 import 'package:instagram_ui_ux/screens/home_screens/home/widgets/icon_home.dart';
+import 'package:instagram_ui_ux/screens/home_screens/home/widgets/post.dart';
 import 'package:instagram_ui_ux/screens/home_screens/home/widgets/story.dart';
 
 class Home extends StatelessWidget {
@@ -12,7 +13,9 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 70,
         leading: IconHome(
-          icon: Icons.camera_alt_outlined,
+          icon: const Icon(
+            Icons.camera_alt_outlined,
+          ),
           event: () {},
           size: 30,
         ),
@@ -25,21 +28,24 @@ class Home extends StatelessWidget {
           IconHome(
             event: () {},
             size: 30,
-            icon: Icons.favorite_border_outlined,
+            icon: const Icon(Icons.favorite_border_outlined),
           ),
           IconHome(
             event: () {},
-            size: 30,
-            icon: Icons.message_outlined,
+            icon: Image.asset(
+              AppPaths().mess,
+              height: 30,
+            ),
           )
         ],
       ),
       body: const SingleChildScrollView(
-        // scrollDirection: Axis.vertical,
+        scrollDirection: Axis.vertical,
         child: Column(
           children: [
             Story(),
-
+            Divider(),
+            Post(),
           ],
         ),
       ),

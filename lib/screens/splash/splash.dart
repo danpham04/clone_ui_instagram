@@ -31,16 +31,54 @@ class _SplashState extends State<Splash> {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            const SizedBox(
+              height: 30,
+            ),
             SizedBox(
-              width: 70,
+              width: 80,
               child: Image.asset(
                 AppPaths().logoIG,
               ),
             ),
             const SizedBox(
-              height: 30,
+              width: 80,
+              height: 80,
+              child: Column(
+                children: [
+                  Text(
+                    'from',
+                    style: TextStyle(fontSize: 17),
+                  ),
+                  Text.rich(
+                    TextSpan(
+                      text: "M",
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 230, 74, 62),
+                          fontSize: 25),
+                      children: [
+                        TextSpan(
+                          text: "e",
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 205, 7, 255),
+                              fontSize: 25),
+                        ),
+                        TextSpan(
+                          text: "t",
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 255, 7, 222),
+                              fontSize: 25),
+                        ),
+                        TextSpan(
+                          text: "a",
+                          style: TextStyle(color: Colors.pink, fontSize: 25),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),

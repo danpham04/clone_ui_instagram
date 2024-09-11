@@ -28,6 +28,29 @@ class Story extends StatelessWidget {
               const Text('Create')
             ],
           ),
+          Row(
+            children: List.generate(6, (index) {
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: Colors.amber,
+                      radius: 45,
+                      child: CircleAvatar(
+                        backgroundImage: AssetImage(AppPaths().hanam),
+                        radius: 42,
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 8,
+                    ),
+                    const Text('Name User')
+                  ],
+                ),
+              );
+            }),
+          )
         ],
       ),
     );
