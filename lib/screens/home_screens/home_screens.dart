@@ -23,8 +23,8 @@ class _HomeScreensState extends State<HomeScreens> {
     _widgets = [
       const Home(),
       const Search(),
-      const Favorite(),
       const AddStory(),
+      const Favorite(),
       const Infor(),
     ];
     super.initState();

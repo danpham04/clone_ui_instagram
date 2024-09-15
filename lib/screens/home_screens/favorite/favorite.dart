@@ -5,6 +5,23 @@ class Favorite extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const DefaultTabController(
+      length: 2,
+      initialIndex: 1,
+      animationDuration: Duration(seconds: 1),
+      child: Scaffold(
+        body: TabBar(
+          indicatorSize: TabBarIndicatorSize.tab,
+          tabs: [
+            Tab(
+              text: "Following",
+            ),
+            Tab(
+              text: "You",
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -9,4 +9,12 @@ class AppPaths {
   final String serach = 'assets/icons/serach.png';
   final String share = 'assets/icons/share.png';
   final String comment = 'assets/icons/comment_ig.png';
+  final String menu = 'assets/icons/menu.png';
+  final String caPi = 'assets/images/anhcapi/capi.png';
+  final String caPiChill = 'assets/images/anhcapi/capichill.png';
+  final String caPiCo = 'assets/images/anhcapi/capico.png';
+  final String caPiNgap = 'assets/images/anhcapi/capingap.png';
+  final String caPiNgu = 'assets/images/anhcapi/capingu.png';
+  final String caPiTam = 'assets/images/anhcapi/capitam.png';
+  final String giaDinhCaPI = 'assets/images/anhcapi/giadinhcapi.png';
 }
