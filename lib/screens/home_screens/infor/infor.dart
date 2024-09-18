@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui_ux/global/app_paths.dart';
-import 'package:instagram_ui_ux/screens/home_screens/infor/infor_user.dart';
+import 'package:instagram_ui_ux/screens/home_screens/infor/widgets/infor_user.dart';
+import 'package:instagram_ui_ux/screens/home_screens/infor/widgets/tab_infor.dart';
 
 class Infor extends StatelessWidget {
   const Infor({super.key});
@@ -27,30 +28,8 @@ class Infor extends StatelessWidget {
         ),
         child: CustomScrollView(
           slivers: [
-            InforUser(),
-            const SliverAppBar(
-              automaticallyImplyLeading: false,
-              floating: false,
-              pinned: true,
-              flexibleSpace: FlexibleSpaceBar(
-                centerTitle: true,
-                title: DefaultTabController(
-                  length: 3,
-                  animationDuration: Duration(seconds: 1),
-                  child: TabBar(indicatorSize: TabBarIndicatorSize.tab, tabs: [
-                    Tab(
-                      icon: Icon(Icons.menu),
-                    ),
-                    Tab(
-                      icon: Icon(Icons.menu),
-                    ),
-                    Tab(
-                      icon: Icon(Icons.menu),
-                    ),
-                  ]),
-                ),
-              ),
-            ),
+            const InforUser(),
+            const TabInfor(),
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.all(20),
