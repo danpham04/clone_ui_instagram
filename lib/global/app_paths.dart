@@ -17,4 +17,8 @@ class AppPaths {
   final String caPiNgu = 'assets/images/anhcapi/capingu.png';
   final String caPiTam = 'assets/images/anhcapi/capitam.png';
   final String giaDinhCaPI = 'assets/images/anhcapi/giadinhcapi.png';
+  final String feed = 'assets/icons/feed_ig.png';
+  final String reels = 'assets/icons/reels_ig.png';
+  final String friendFeed = 'assets/icons/friend_ig.png';
+  final String addIg = 'assets/icons/add_ig.png';
 }
